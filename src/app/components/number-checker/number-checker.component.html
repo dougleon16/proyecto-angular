@@ -1,0 +1,12 @@
+<div> 
+    <label for="number">Number:
+    </label> 
+    <input type="number" id="number" [(ngModel)]="number">
+ </div> 
+ <div *ngIf="result !== null"> 
+    <p *ngIf="result.isEven">This number is even!</p>
+     <p *ngIf="!result.isEven">This number is odd.</p> 
+     <p *ngIf="result.isFibonacci">This number is a Fibonacci number.</p>
+      <p *ngIf="!result.isFibonacci">This number is not a Fibonacci number.</p>
+     </div> 
+     <button (click)="checkNumber()">Check</button>

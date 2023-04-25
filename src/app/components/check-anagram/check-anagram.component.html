@@ -1,0 +1,16 @@
+<div> 
+    <label for="word1">Word 1:</label> 
+    <input type="text" id="word1" [(ngModel)]="word1"> 
+</div>
+ <div> 
+    <label for="word2">Word 2:
+    </label> 
+    <input type="text" id="word2" [(ngModel)]="word2"> 
+</div> 
+<div>
+    <button (click)="checkAnagram()">Check Anagram</button>
+</div>
+<div *ngIf="result !== null"> 
+<p *ngIf="result">These words are anagrams!</p>
+<p *ngIf="!result">These words are not anagrams.</p> 
+</div>
